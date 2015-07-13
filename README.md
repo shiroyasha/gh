@@ -2,6 +2,55 @@
 
 ![Logo](http://fc06.deviantart.net/fs46/f/2009/245/3/9/WALLPAPER___RainbowSlide_by_lastscionz.jpg)
 
+Developers usually work on multiple Git repositories at once, cloning, pushing,
+and keeping their local repositories up to date. This can be achieved manually,
+but after a certain threshold of local repositories (around 10 repositories)
+this process can become tedious and time consuming.
+
+GH is here help. If you keep your local repositories in a project directory it
+can help you list their current statuses, pull the latest changes, or even
+remove some of them.
+
+Here is an example workflow with GH:
+
+For example let's clone the following repositories into your local cache:
+ - [Faraday](https://github.com/lostisland/faraday)
+ - [Base App](https://github.com/renderedtext/base-app)
+ - [Rails](https://github.com/rails/rails)
+
+You can achieve this very easily using GH:
+
+``` bash
+$ gh clone lostisland/faraday
+$ gh clone renderedtext/base-app
+$ gh clone rails/rails
+```
+
+The above commands will by default put these repositories into the `$HOME/code`
+directory. You can list them with `gh list`.
+
+``` bash
+$ gh list
+base-app -> git@github.com:/renderedtext/base-app.git
+faraday -> git@github.com:/lostisland/faraday.git
+rails -> git@github.com:/rails/rails.git
+```
+
+Or even inspect their statuses with `gh status`:
+
+``` txt
+$ gh status
+base-app
+## master...origin/master
+
+rails
+## master...origin/master
+ D Rakefile
+
+faraday
+## master...origin/master
+```
+
 ## Usage
 
 ### gh status
