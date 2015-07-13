@@ -5,7 +5,7 @@
 
 PROJECTS_PATH="$HOME/code"
 
-# gh exec
+# gh help
 #   Shows this help message
 #
 if [[ $1 == "help" ]]; then

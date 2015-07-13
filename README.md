@@ -4,9 +4,6 @@
 
 ## Usage
 
-### gh exec
-  Shows this help message
-
 ### gh status
   Shows the statuses of all local git projects
 
@@ -32,6 +29,9 @@
   type the following
 
     gh exec 'ls | wc -l'
+
+### gh help
+  Shows this help message
 
 ## About
 
