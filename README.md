@@ -1,5 +1,7 @@
 # GH - Git project menagment tool - v0.9
 
+![Logo](http://fc06.deviantart.net/fs46/f/2009/245/3/9/WALLPAPER___RainbowSlide_by_lastscionz.jpg)
+
 ## Usage
 
 ### gh exec
