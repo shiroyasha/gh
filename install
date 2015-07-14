@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+curl -L 'https://raw.githubusercontent.com/shiroyasha/gh/master/gh' -o ~/bin/gh
+
+chmod +x ~/bin/gh
