@@ -61,11 +61,11 @@ fi
 #     gh rm faraday
 #
 if [[ $1 == "rm" ]]; then
-  echo "\e[31mRemoving\e[31m $PROJECTS_PATH/$repo ..."
+  echo -e "\e[31mRemoving\e[31m $PROJECTS_PATH/$repo ..."
   cd ~
   repo=$2
   rm -rf "$PROJECTS_PATH/$repo"
-  echo "Removed."
+  echo "Project removed."
 fi
 
 # gh list
