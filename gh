@@ -3,7 +3,18 @@
 # Git project menagment tool - v0.9
 #
 
-PROJECTS_PATH="$HOME/code"
+# GH uses the PROJECTS_PATH environment variable to determine
+# the location where you store your git projects. By default
+# this directory is $HOME/code but you can change it simply
+# by exporting another value:
+#
+#   export PROJECTS_PATH=$HOME/projects
+#
+[ -z "$PROJECTS_PATH" ] && PROJECTS_PATH="$HOME/code"
+
+# GH will create the projects directory if it doesn't exists
+#
+[ -d "$PROJECTS_PATH" ] || mkdir -p "$PROJECTS_PATH"
 
 # gh help
 #   Shows this help message
