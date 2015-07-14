@@ -69,6 +69,19 @@ file:
 export PATH=$PATH:$HOME/bin
 ```
 
+## Projects path
+
+GH uses the `PROJECTS_PATH` environment variable to determine
+the location where you store your git projects. By default
+this directory is `$HOME/code` but you can change it simply
+by exporting another value:
+
+```
+export PROJECTS_PATH=$HOME/projects
+```
+
+GH will create the projects directory if it doesn't exists
+
 ## Usage
 
 ### gh status
