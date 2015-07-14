@@ -1,4 +1,4 @@
-# GH - Git project menagment tool - v0.9
+# GH - Git project managment tool - v0.9
 
 ![Logo](http://fc06.deviantart.net/fs46/f/2009/245/3/9/WALLPAPER___RainbowSlide_by_lastscionz.jpg)
 
@@ -50,6 +50,24 @@ rails
 faraday
 ## master...origin/master
 ```
+## Installation
+
+You can use the following automatic installer command that will install GH
+inside the `bin` directory in your home path.
+
+``` sh
+curl -L 'https://raw.githubusercontent.com/shiroyasha/gh/master/install' | bash
+```
+
+### Adding GH to your path
+
+After installation, please append GH's path into your PATH environment variable.
+You can achieve this by adding the following line into your `.bashrc` or `.zshrc`
+file:
+
+``` sh
+export PATH=$PATH:$HOME/bin
+```
 
 ## Usage
 
@@ -57,7 +75,7 @@ faraday
   Shows the statuses of all local git projects
 
 ### gh clone
-  Clone a project from github into your projects directory
+  Clone a project from GitHub into your projects directory
   For example to clone Faraday(https://github.com/lostisland/faraday)
   type the following:
 
